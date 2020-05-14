@@ -1,10 +1,10 @@
 #!/bin/bash -x
 
-read -p "Enter the first name: " FirstName
-FirstPattern="^[A-Z]{1}[a-z]{3,}$"
-if [[ $FirstName =~ $FirstPattern ]]
+read -p "Enter the last name; " LastName
+LastPattern="^[A-Z]{1}[a-z]{3,}$"
+if [[ $LastName =~ $LastPattern ]]
 then
-        echo Valid First Name
+        echo Valid Last Name
 else
-        echo Invalid First Name
+        echo Invalid Last Name
 fi
