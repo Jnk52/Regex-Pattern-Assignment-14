@@ -1,11 +1,12 @@
 #!/bin/bash -x
-input=abc.xyz@bl.co.in
-pattern="^[a-z\.]*[a-z\@]*[a-z\.]*[a-z\.]*[a-z]*$"
-if [[ $input =~ $pattern ]]
+read -p "Enter mobile number : " number
+pattern="^[1-9]{2}[ :Space: ][1-9]{1}[0-9]{9}$"
+if [[ $number =~ $pattern ]]
 then
-        echo Valid Email
+        echo Valid Number
 else
-        echo Invalid Email
+        echo Invalid Number
 fi
+
 
 
