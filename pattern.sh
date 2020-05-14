@@ -1,10 +1,11 @@
 #!/bin/bash -x
-
-read -p "Enter the last name; " LastName
-LastPattern="^[A-Z]{1}[a-z]{3,}$"
-if [[ $LastName =~ $LastPattern ]]
+input=abc.xyz@bl.co.in
+pattern="^[a-z\.]*[a-z\@]*[a-z\.]*[a-z\.]*[a-z]*$"
+if [[ $input =~ $pattern ]]
 then
-        echo Valid Last Name
+        echo Valid Email
 else
-        echo Invalid Last Name
+        echo Invalid Email
 fi
+
+
