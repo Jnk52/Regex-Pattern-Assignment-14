@@ -1,12 +1,11 @@
 #!/bin/bash -x
-read -p "Enter mobile number : " number
-pattern="^[1-9]{2}[ :Space: ][1-9]{1}[0-9]{9}$"
-if [[ $number =~ $pattern ]]
+read -p "input:" input
+passwordPattern="^((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%]).{8,})$"
+
+if [[ $input =~ $passwordPattren ]]
 then
-        echo Valid Number
+        echo Valid Password
 else
-        echo Invalid Number
+        echo Invalid Password
 fi
-
-
 
